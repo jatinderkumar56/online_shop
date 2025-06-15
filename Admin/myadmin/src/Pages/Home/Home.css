@@ -1,0 +1,8 @@
+.home{
+    flex: 4;
+    /* background-color: red; */
+}
+.homewidget{
+    display: flex;
+    margin: 20px;
+}

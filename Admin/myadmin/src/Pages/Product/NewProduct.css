@@ -1,0 +1,36 @@
+.newProduct{
+    flex: 4;
+    padding: 20px;
+}
+.newProductTitle{
+margin-bottom: 10px;
+}
+.AddproductItem{
+    display: flex;
+    flex-direction: column;
+}
+.AddproductItem > input{
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.AddproductItem > select{
+    width: 275px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.AddproductItem>label{
+    margin-bottom: 10px;
+    color: gray;
+    font-weight: 600;
+}
+.updateclass{
+    width: 100px;
+    border: none;
+    border-radius: 7px;
+    background-color: blue;
+    color: white;
+    padding :5px;
+    font-weight: 600 ;
+    cursor: pointer;
+}

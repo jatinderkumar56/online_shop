@@ -1,0 +1,46 @@
+.sidebar{
+    flex: 1;
+    /* background-color: red; */
+    background-color: rgb(251, 251, 255);
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    /* height: 100vh; it is overflow */
+}
+.sidebar a {
+  text-decoration: none;
+  color: inherit;
+}
+.sidebarWrapper {
+  color: #555;
+  padding: 20px;
+
+}
+.sidebarMenu {
+  margin-bottom: 10px;
+}
+.sidebarTitle {
+  font-size: 13px;
+  color: lightgray;
+}
+.sidebarList {
+  list-style: none;
+  padding: 5px;
+}
+.sideBarListItem {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.sideBarListItem active,
+.sideBarListItem:hover{
+    background-color: rgb(240, 240, 255);
+}
+.sideBarIcon{
+    margin-right: 5px;
+    font-size: 20px!important;
+    
+
+}
