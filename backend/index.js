@@ -23,11 +23,11 @@ mongoose.connect(process.env.MONGO_URL)
   .catch((err) => console.log(err));
 
 app.use(express.json());
-// app.use(cors({
-//   origin: "https://ecommerce-web-1-fdu6.onrender.com", // Only allow this frontend
-//  credentials:true
-// }));
-app.use(cors());
+app.use(cors({
+  origin: "https://online-shop-1-lb06.onrender.com", // Only allow this frontend
+ credentials:true
+}));
+
 
 /// All Router links///////////
 app.use('/api/auth', authRoutes);
