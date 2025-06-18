@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const BASE_URL = "https://ecommerce-web-1-fdu6.onrender.com/api/";
+const BASE_URL = "http://localhost:5000/api/";
 
 
 let TOKEN = "";

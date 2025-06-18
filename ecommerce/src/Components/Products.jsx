@@ -24,9 +24,9 @@ function Products({cat,filters,sort}) {
           //only category related product otherwise show all like in homepage under category section.
           cat
           ?
-          `https://ecommerce-web-1-fdu6.onrender.com/api/products?category=${cat}`
+          `http://localhost:5000/api/products?category=${cat}`
           :
-          "https://ecommerce-web-1-fdu6.onrender.com/api/products");
+          "http://localhost:5000/api/products");
           // put all api fetch product in this usestate setproducts
           // now all our products are in product usestate
         setproducts(res.data);

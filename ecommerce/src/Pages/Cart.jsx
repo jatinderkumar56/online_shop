@@ -267,7 +267,7 @@ function Cart() {
             </SummaryItem>
             
             <StripeCheckout
-            name="lama shop"
+            name="TrendyNest"
             image="https://avatars.githubusercontent.com/u/1486366?v=4"
             billingAddress
             shippingAddress
