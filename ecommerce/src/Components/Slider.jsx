@@ -3,8 +3,9 @@ import styled from 'styled-components'
 import ArrowLeftIcon from '@mui/icons-material/ArrowLeft';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { sliderItems } from './DataFile';
-import { mobile } from '../Responsive';
+import { mobile, tabletstyles } from '../Responsive';
 import { Link } from 'react-router-dom';
+import { positive } from 'zod/v4';
 
 const Container = styled.div`
 display: flex;
@@ -14,6 +15,10 @@ width: 100%;
 position: relative;
 overflow: hidden;
 ${mobile({display: 'none'})}
+${tabletstyles({display:'none'})}
+
+
+
 `
 const Arrow = styled.div`
 height: 50px;
@@ -34,9 +39,11 @@ opacity: 0.5;
 z-index: 2;
 `;
 const Wrapper = styled.div`
+
 height: 100%;
 display: flex;
 transition: all 1.5s ease;
+
 transform: translateX(${(props)=> props.slideIndex * -100}vw);
 `;
 const Slide = styled.div`
@@ -46,6 +53,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: #${(props)=>props.bg};
+ 
 `
 
 const ImgContainer = styled.div`
@@ -58,10 +66,12 @@ const Image = styled.img`
 height: 80%;
 
 
+
 `
 const InfoContainer = styled.div`
 flex: 1;
 padding: 50px;
+ 
 
 
 
@@ -75,6 +85,7 @@ margin: 50px 0px;
 font-size: 20px;
 font-weight: 500;
 letter-spacing: 3px;
+
 `
 const Button = styled.button`
 
