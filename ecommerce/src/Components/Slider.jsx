@@ -5,7 +5,7 @@ import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 import { sliderItems } from './DataFile';
 import { mobile, tabletstyles } from '../Responsive';
 import { Link } from 'react-router-dom';
-import { positive } from 'zod/v4';
+
 
 const Container = styled.div`
 display: flex;
